@@ -7,7 +7,7 @@ namespace Arrays
 {
     class PartySystem
     {
-        Character[] MyTeam = new Character[2];
+        Character[] MyTeam;
         public PartySystem()
         {
             // Construct the team.
@@ -21,6 +21,7 @@ namespace Arrays
         public void Run()
         {
             // Display the team.
+            Title = "Arrays";
             WriteLine("=== My Characters ===");
             foreach(Character currentCharacter in MyTeam)
             {
